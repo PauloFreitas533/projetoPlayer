@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musica.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div><center>
+            <select class="cBox" id="cBox" onchange="send()">
+                <option value="">--Select Music--</option>
+                <option value="0">Slash - Apocalyptic Love</option>
+                <option value="1">Pantera - Cemetery Gates</option>
+                <option value="2">Scorpions - Rock You Like Hurricane</option>
+                <option value="3">Dire Straits - Sultan of Swing</option>
+                <option value="4">Steve Vai - For The Love Of God</option>
+                <option value="5">Avenged Sevenfold - Cover Pantera</option> 
+            </select>
+    </center></div>
+    </section>
+    <center><div id="player">
+        <h4><i class="material-icons">equalizer</i> MP3Player</h4>
+        <div class="card">
+          <div class="card-image"></div>
+          <div class="card-content">
+            <h5>Title</h5>
+            <p class="artist">Artist</p>
+            <audio class="my_audio" autoplay controls></audio>
+            <input type="button" class="material-icons" 
+            value="stop" onclick="stop()">
+          </div>
+        </div>
+      </div></center>
+    <footer>
+        <p>&copy; PauloFreitas</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
